@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Extractor</title>
+  <script src="popup.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+</head>
+
+<body>
+  <div style="width: 300px;text-align: center;">
+    <button id="extractButton" style="margin: 0 auto;">Lấy đơn hàng</button>
+    <div id="htmlOutput" style="color: red;margin: 10 auto;">
+      <ul style="list-style:none;">
+        <li>Các bước thực hiện:</li>
+        <li>1. Nhấn nút "Lấy đơn hàng"</li>
+        <li>2. Truy cập <a href="https://kinghome.vn/manageshop/shipperorder/listorder" target="_blank">Quản lý đơn
+            hàng</a> để giao đơn cho nhân viên</li>
+        <li>Lưu ý: Mỗi đơn hàng chỉ lấy 1 lần, truy cập vô chi tiết đơn hàng trên Sapo và thực hiện lấy đơn hàng</li>
+      </ul>
+    </div>
+    <button id="btnGetSendZNS" style="margin: 0 auto;">Gửi tin nhắn Zalo</button>
+    <div id="htmlOutput" style="color: red;margin: 10 auto;">
+      <ul style="list-style:none;">
+        <li>Lưu Ý:</li>
+        <li>1. Không gửi được cho các đơn hàng thuộc sàn TMDT</li>
+        <li>2. Không gửi được cho các đơn hàng đã HUỶ</li>
+        <li>3. Chỉ gửi được cho: Hoàn Thành, Đặt hàng, Đang xử lý</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
